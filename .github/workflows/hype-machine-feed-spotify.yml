@@ -1,5 +1,8 @@
 name: hype-machine-feed-spotify
 
+permissions:
+  contents: write
+
 on:
   schedule:
     - cron: '0 * * * *'
