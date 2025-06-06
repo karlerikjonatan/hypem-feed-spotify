@@ -50,6 +50,11 @@ async function getHypeMachineSongs() {
   return uniqueSongs;
 }
 
+async function isTrackLiked(trackId) {
+  const res = await spotifyApi.containsMySavedTracks([trackId]);
+  return res.body[0];
+}
+
 async function main() {
   try {
     await refreshToken();
@@ -72,6 +77,12 @@ async function main() {
 
         if (isInCache(track.id, cache)) {
           console.log(`⚠️ Skipped (cached): ${song.artist} - ${song.title}`);
+          continue;
+        }
+
+        const liked = await isTrackLiked(track.id);
+        if (liked) {
+          console.log(`❤️ Skipped (already liked): ${song.artist} - ${song.title}`);
           continue;
         }
 
