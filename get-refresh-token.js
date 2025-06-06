@@ -11,7 +11,7 @@ const CLIENT_ID = process.env.SPOTIFY_CLIENT_ID
 const CLIENT_SECRET = process.env.SPOTIFY_CLIENT_SECRET;
 const REDIRECT_URI = process.env.SPOTIFY_REDIRECT_URI;
 
-const scopes = ['playlist-modify-public', 'playlist-modify-private'];
+const scopes = ['playlist-modify-public', 'playlist-modify-private', 'user-library-read'];
 
 const spotifyApi = new SpotifyWebApi({
   clientId: CLIENT_ID,
