@@ -25,7 +25,7 @@ async function refreshToken() {
   spotifyApi.setAccessToken(data.body['access_token']);
 }
 
-async function getHypeMachineSongs() {
+async function getHypemSongs() {
   const allSongs = [];
 
   for (const url of HYPEM_TAG_URLS) {
@@ -58,7 +58,7 @@ async function isTrackLiked(trackId) {
 async function main() {
   try {
     await refreshToken();
-    const songs = await getHypeMachineSongs();
+    const songs = await getHypemSongs();
     const cache = loadCache();
 
     for (const song of songs) {

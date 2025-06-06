@@ -1,4 +1,4 @@
-name: hype-machine-feed-spotify
+name: hypem-feed-spotify
 
 permissions:
   contents: write
