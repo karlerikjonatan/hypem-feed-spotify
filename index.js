@@ -20,7 +20,7 @@ const HYPEM_TAG_URLS = [
   'https://hypem.com/tags/folk-rock',
   'https://hypem.com/tags/folk-rock',
   'https://hypem.com/tags/folk',
-  'https://hypem.com/tags/folk%20pop'
+  'https://hypem.com/tags/folk%20pop',
   'https://hypem.com/tags/folk%20rock',
   'https://hypem.com/tags/folktronica',
   'https://hypem.com/tags/freak-folk',
