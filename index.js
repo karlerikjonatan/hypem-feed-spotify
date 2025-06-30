@@ -6,7 +6,6 @@ const SpotifyWebApi = require('spotify-web-api-node');
 const { loadCache, isInCache, addToCache } = require('./cache');
 
 const HYPEM_TAG_URLS = [
-  
   'https://hypem.com/tags/alt-country',
   'https://hypem.com/tags/alt%20country',
   'https://hypem.com/tags/alternative%20country',
