@@ -9,20 +9,14 @@ const HYPEM_TAG_URLS = [
   "https://hypem.com/tags/alt-country",
   "https://hypem.com/tags/alt%20country",
   "https://hypem.com/tags/alternative%20country",
-  "https://hypem.com/tags/chamber-folk",
-  "https://hypem.com/tags/chamber%20folk",
   "https://hypem.com/tags/country-rock",
   "https://hypem.com/tags/country",
   "https://hypem.com/tags/country%20rock",
-  "https://hypem.com/tags/folk-pop",
   "https://hypem.com/tags/folk-rock",
   "https://hypem.com/tags/folk",
-  "https://hypem.com/tags/folk%20pop",
   "https://hypem.com/tags/folk%20rock",
   "https://hypem.com/tags/indie-folk",
   "https://hypem.com/tags/indie%20folk",
-  "https://hypem.com/tags/progressive%20folk",
-  "https://hypem.com/tags/psychedelic%20folk",
   "https://hypem.com/tags/singer-songwriter"
 ];
 
