@@ -78,24 +78,29 @@ async function main() {
         const releaseDate = track.album.release_date;
         const releaseYear = parseInt(releaseDate.split('-')[0], 10);
 
+        // Filter by release year
         if (releaseYear !== 2025) {
-          console.log(`📆 Skipped (not 2025): ${song.artist} - ${song.title} (${releaseDate})`);
           continue;
         }
 
+        // Filter by popularity >= 10
+        if (track.popularity < 10) {
+          continue;
+        }
+
+        // Skip already indexed tracks
         if (isInCache(track.id, cache)) {
-          console.log(`⚠️ Skipped (cached): ${song.artist} - ${song.title}`);
           continue;
         }
 
+        // Skip already liked tracks
         const liked = await isTrackLiked(track.id);
         if (liked) {
-          console.log(`❤️ Skipped (already liked): ${song.artist} - ${song.title}`);
           continue;
         }
 
+        // Add track to playlist
         await spotifyApi.addTracksToPlaylist(PLAYLIST_ID, [`spotify:track:${track.id}`]);
-        console.log(`✅ Added: ${song.artist} - ${song.title} (${releaseDate})`);
         addToCache(track.id, cache);
       }
 
