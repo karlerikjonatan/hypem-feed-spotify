@@ -79,7 +79,7 @@ async function main() {
         const releaseYear = parseInt(releaseDate.split('-')[0], 10);
 
         // Filter by release year
-        if (releaseYear !== 2025) {
+        if (releaseYear !== 2026) {
           continue;
         }
 
