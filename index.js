@@ -6,18 +6,40 @@ const SpotifyWebApi = require('spotify-web-api-node');
 const { loadCache, isInCache, addToCache } = require('./cache');
 
 const HYPEM_TAG_URLS = [
+  "https://hypem.com/tags/acoustic",
+  "https://hypem.com/tags/acoustic%20folk",
   "https://hypem.com/tags/alt-country",
   "https://hypem.com/tags/alt%20country",
   "https://hypem.com/tags/alternative%20country",
+  "https://hypem.com/tags/ambient-country",
+  "https://hypem.com/tags/ambient%20country",
+  "https://hypem.com/tags/americana-folk",
+  "https://hypem.com/tags/americana",
+  "https://hypem.com/tags/americana%20folk",
+  "https://hypem.com/tags/cosmic-country",
+  "https://hypem.com/tags/cosmic%20country",
   "https://hypem.com/tags/country-rock",
   "https://hypem.com/tags/country",
   "https://hypem.com/tags/country%20rock",
+  "https://hypem.com/tags/folk-pop",
   "https://hypem.com/tags/folk-rock",
   "https://hypem.com/tags/folk",
+  "https://hypem.com/tags/folk%20pop",
   "https://hypem.com/tags/folk%20rock",
+  "https://hypem.com/tags/heartland",
+  "https://hypem.com/tags/indie-acoustic",
   "https://hypem.com/tags/indie-folk",
+  "https://hypem.com/tags/indie%20acoustic",
   "https://hypem.com/tags/indie%20folk",
-  "https://hypem.com/tags/singer-songwriter"
+  "https://hypem.com/tags/modern-country",
+  "https://hypem.com/tags/modern%20country",
+  "https://hypem.com/tags/outlaw-country",
+  "https://hypem.com/tags/outlaw%20country",
+  "https://hypem.com/tags/roots-rock",
+  "https://hypem.com/tags/roots",
+  "https://hypem.com/tags/roots%20rock",
+  "https://hypem.com/tags/singer-songwriter",
+  "https://hypem.com/tags/songwriter"
 ];
 
 const PLAYLIST_ID = process.env.SPOTIFY_PLAYLIST_ID;
